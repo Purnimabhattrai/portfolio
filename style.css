@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #ede4e2ef;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  background: #5a2381;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+nav.about {
+  position: sticky;
+  top: 0;
+  background: #9a67bf;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #90e0ef;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #03045e;
+}
+
+.AboutMe {
+  background-color: #d6b1e3;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: slideFadeIn 1.5s ease forwards;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.skills-list li {
+  background: #90e0ef;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #023e8a;
+}
+
+.project-card {
+  background-color:  #d6b1e3;;
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 5px solid #0077b6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+form button {
+  padding: 10px;
+  background: #552287;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #023e8a;
+}
+
+footer {
+  background: #03045e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+.contact{
+  background-color:#c9a0e5
+}
+/* From Uiverse.io by aarjaycreation */ 
+.main__socials {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.Link__instagram {
+  padding: 0.8em;
+  outline: none;
+  border: none;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.instagram {
+  fill: #cc39a4;
+}
+
+.Link__twitter {
+  padding: 0.8em;
+  outline: none;
+  border: none;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.twitter {
+  fill: #03a9f4;
+}
+
+.Link__github {
+  padding: 0.8em;
+  outline: none;
+  border: none;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.Link__discord {
+  padding: 0.8em;
+  outline: none;
+  border: none;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.discord {
+  fill: #8c9eff;
+}
+
+.Link__instagram:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.Link__instagram:hover .instagram {
+  fill: white;
+}
+
+.Link__twitter:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03a9f4;
+}
+
+.Link__twitter:hover .twitter {
+  fill: white;
+}
+
+.Link__github:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.Link__github:hover .github {
+  fill: white;
+}
+
+.Link__discord:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.Link__discord:hover .discord {
+  fill: white;
+}
+.project{
+  background-color:#af82cf;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.AboutMe {
+  flex: 1;
+  min-width: 280px;
+}
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image img {
+    margin-bottom: 1rem;
+  }
+}.about-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  border-radius: 20px;
+}
+.about-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(238, 232, 202, 0.6), 
+              0 0 40px rgba(241, 222, 113, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: goldenGlow 3s infinite alternate ease-in-out;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.AboutMe {
+  flex: 1;
+  min-width: 300px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.AboutMe h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.AboutMe p {
+  line-height: 1.7;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.skills{
+  background-color:#cea0ef;
+
+}
+
+
+.mysql-loader {
+  position: absolute;
+  top: 0;
+  right: -80px; 
+  width: 60px;
+  aspect-ratio: 4;
+  background: radial-gradient(circle closest-side, #6b21a8 90%, #0000) 0 /
+    calc(100% / 3) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: mysql-loading 1s steps(4) infinite;
+}
+
+@keyframes mysql-loading {
+  to {
+    clip-path: inset(0 -34% 0 0);
+  }
+}
